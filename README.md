@@ -51,24 +51,25 @@ The code will pick random area 1-4, then pick random coordinate inside the area.
 The goals generation is repeated forever for each time action is finished means the current target is reached.
 
 ## How to run
-Run Gazebo world simulation
+*Run Gazebo world simulation
 ```bash
 $roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
-Run Navigation
+*Run Navigation
 ```bash
 $roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml (change dir to map.yaml location)
 ```
 
-Run pose initialization:
+*Run pose initialization:
 ```bash
 %sh initial_pose.sh 
 ```
 This code is simply pub topic once at the spawn position of Gazebo world simulation. Then do rotation for 3 seconds to reduce the particle variance.
+
 ![image](https://user-images.githubusercontent.com/36762228/172047645-065b9ab4-9d2a-493c-85c6-be5990353e10.png)
 
 
-Run send_move_base_goals launchfile:
+*Run send_move_base_goals launchfile:
 ```bash
 $roslaunch send_move_base_goals movebase_continuous.launch
 ```
