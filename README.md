@@ -3,6 +3,7 @@ Sending random points continuously for Turtlebot3 move_base/goals on predefined 
 
 # Requirements:
 *ROS Noetic
+
 *[Turtlebot packages](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup) 
 
 
