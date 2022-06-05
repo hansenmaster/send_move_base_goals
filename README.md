@@ -50,6 +50,9 @@ The package is based on https://github.com/FiorellaSibona/turtlebot3_nav/tree/de
 The code will pick random area 1-4, then pick random coordinate inside the area.
 The goals generation is repeated forever for each time action is finished means the current target is reached.
 
+![image](https://user-images.githubusercontent.com/36762228/172049601-5aed9b4f-ae16-472c-9932-92eb0bfa181e.png)
+
+
 ## How to run
 ### Run Gazebo world simulation
 ```bash
