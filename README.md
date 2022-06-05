@@ -2,7 +2,8 @@
 Sending random points continuously for Turtlebot3 move_base/goals on predefined area
 
 # Requirements:
-ROS Noetic, Turtlebot packages
+*ROS Noetic
+*[Turtlebot packages](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup) 
 
 
 $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
