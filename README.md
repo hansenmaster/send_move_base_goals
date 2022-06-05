@@ -78,6 +78,12 @@ This code is simply pub topic once at the spawn position of Gazebo world simulat
 ```bash
 $roslaunch send_move_base_goals movebase_continuous.launch
 ```
+
+
+https://user-images.githubusercontent.com/36762228/172050549-6df5b3a6-bcf0-416e-bd7f-fb40ed40da58.mp4
+
+
+
 ## Reference
 https://github.com/FiorellaSibona/turtlebot3_nav/tree/devel/catkin_ws/src/simple_navigation_goals
 
