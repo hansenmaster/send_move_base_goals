@@ -10,7 +10,8 @@ Sending random points continuously for Turtlebot3 move_base/goals on predefined 
   <li>Fourth item</li>
 </ul> 
 
-$ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
+```bash
+sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
   ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc \
   ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan \
   ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python \
@@ -19,4 +20,5 @@ $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
   ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro \
   ros-kinetic-compressed-image-transport ros-kinetic-rqt* \
   ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
+```
 
