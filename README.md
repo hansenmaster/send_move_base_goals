@@ -23,7 +23,13 @@ $sudo apt install ros-noetic-turtlebot3-msgs
 $sudo apt install ros-noetic-turtlebot3
 ```
 ## Setup
-git 
+```bash
+$cd ~/catkin_ws/src
+$git clone https://github.com/hansenmaster/turtlebot_move_base_navigation_patrol_random
+$cd ..
+$catkin_male
+$source devel/setup.bash
+```
 
 ## Explanation
 Move base is a navigation stack package on ROS that receive predefined map by SLAM, robot information (transform, odometry, sensor reading), and goals to output /cmd_vel topics and costmap. On real robot, the cmd_vel will be converted by its controller using the SDK.
