@@ -7,7 +7,8 @@ Sending random points continuously for Turtlebot3 move_base/goals on predefined 
   <li>ROS Noetic</li>
   <li>[Turtlebot packages](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup) </li>
 </ul> 
-  ```bash
+
+```bash
 sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
   ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc \
   ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan \
@@ -18,5 +19,6 @@ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
   ros-kinetic-compressed-image-transport ros-kinetic-rqt* \
   ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
 ```
+
 
 
