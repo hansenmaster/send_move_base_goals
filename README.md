@@ -47,7 +47,8 @@ The package is based on https://github.com/FiorellaSibona/turtlebot3_nav/tree/de
 
 ## Goals generation
 ![image](https://user-images.githubusercontent.com/36762228/172047213-cc0de060-2b59-4a7c-ba01-c123bda5271c.png)
-
+The code will pick random area 1-4, then pick random coordinate inside the area.
+The goals generation is repeated forever for each time action is finished means the current target is reached.
 
 ## How to run
 Run Gazebo world simulation
@@ -64,6 +65,7 @@ Run pose initialization:
 %sh initial_pose.sh 
 ```
 This code is simply pub topic once at the spawn position of Gazebo world simulation. Then do rotation for 3 seconds to reduce the particle variance.
+![image](https://user-images.githubusercontent.com/36762228/172047645-065b9ab4-9d2a-493c-85c6-be5990353e10.png)
 
 
 Run send_move_base_goals launchfile:
