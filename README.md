@@ -23,5 +23,20 @@ sudo apt install ros-noetic-turtlebot3-msgs
 sudo apt install ros-noetic-turtlebot3
 ```
 
+## Explanation
+Move base is a navigation stack package on ROS that receive predefined map by SLAM, robot information (transform, odometry, sensor reading), and goals to output /cmd_vel topics and costmap. On real robot, the cmd_vel will be converted by its controller using the SDK.
+
+### Move base package:
+Subscribe to:
+<ul>
+  <li>/map (occupancy grid by SLAM)</li>
+  <li>/tf /odom /scan (robot information and sensors reading) </li>
+  <li>/move_base_simple/goals (goals for navigation) </li>
+</ul> 
+
+## Disclaimer
+The contribution of this repository is to continously sends /move_base_simple/goals by sending action. The SLAM map and all navigation stack are available from the Turtlebot3 repository
+
+## How to run
 
 
