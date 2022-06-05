@@ -27,14 +27,13 @@ $sudo apt install ros-noetic-turtlebot3
 $cd ~/catkin_ws/src
 $git clone https://github.com/hansenmaster/turtlebot_move_base_navigation_patrol_random
 $cd ..
-$catkin_male
+$catkin_make
 $source devel/setup.bash
 ```
 
-## Explanation
+### Move base package:
 Move base is a navigation stack package on ROS that receive predefined map by SLAM, robot information (transform, odometry, sensor reading), and goals to output /cmd_vel topics and costmap. On real robot, the cmd_vel will be converted by its controller using the SDK.
 
-### Move base package:
 Subscribe to:
 <ul>
   <li>/map (occupancy grid by SLAM)</li>
@@ -44,9 +43,13 @@ Subscribe to:
 
 ## Disclaimer
 The contribution of this repository is to continously sends /move_base_simple/goals by sending action. The SLAM map and all navigation stack are available from the Turtlebot3 repository. A bash script of auto pose initialization is also on the initial_pose.sh
+The package is based on https://github.com/FiorellaSibona/turtlebot3_nav/tree/devel/catkin_ws/src/simple_navigation_goals . Instead of doing patrol on predefined points, I made random points to showcase that move_base really works autonomously while doing obstacle avoidance.
+
+## Goals generation
+![image](https://user-images.githubusercontent.com/36762228/172047213-cc0de060-2b59-4a7c-ba01-c123bda5271c.png)
+
 
 ## How to run
-
 Run Gazebo world simulation
 ```bash
 $roslaunch turtlebot3_gazebo turtlebot3_world.launch
@@ -62,9 +65,11 @@ Run pose initialization:
 ```
 This code is simply pub topic once at the spawn position of Gazebo world simulation. Then do rotation for 3 seconds to reduce the particle variance.
 
+
 Run send_move_base_goals launchfile:
 ```bash
 $roslaunch send_move_base_goals movebase_continuous.launch
 ```
-
+## Reference
+https://github.com/FiorellaSibona/turtlebot3_nav/tree/devel/catkin_ws/src/simple_navigation_goals
 
