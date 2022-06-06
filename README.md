@@ -80,6 +80,10 @@ This code is simply pub topic once at the spawn position of Gazebo world simulat
 
 ### Run send_move_base_goals launchfile:
 ```bash
+$roscd send_move_base_goals/scripts/
+$chmod +x move_base_forever
+```
+```bash
 $roslaunch send_move_base_goals movebase_continuous.launch
 ```
 
