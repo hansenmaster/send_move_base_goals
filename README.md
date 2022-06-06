@@ -42,8 +42,12 @@ Subscribe to:
 </ul> 
 
 ## Disclaimer
-The contribution of this repository is to continously sends /move_base_simple/goals by sending action. The SLAM map and all navigation stack are available from the Turtlebot3 repository. A bash script of auto pose initialization is also on the initial_pose.sh
-The package is based on https://github.com/FiorellaSibona/turtlebot3_nav/tree/devel/catkin_ws/src/simple_navigation_goals . Instead of doing patrol on predefined points, I made random points to showcase that move_base really works autonomously while doing obstacle avoidance.
+
+<ul>
+  <li>The contribution of this repository is to continously sends /move_base_simple/goals by sending action. The SLAM map and all navigation stack are available from the Turtlebot3 repository. </li>
+  <li>A bash script of auto pose initialization is also on the initial_pose.sh </li>
+  <li>The package is based on https://github.com/FiorellaSibona/turtlebot3_nav/tree/devel/catkin_ws/src/simple_navigation_goals . Instead of doing patrol on predefined points, I made random points to showcase that move_base really works autonomously while doing obstacle avoidance. </li>
+</ul> 
 
 ## Goals generation
 ![image](https://user-images.githubusercontent.com/36762228/172047213-cc0de060-2b59-4a7c-ba01-c123bda5271c.png)
