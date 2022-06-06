@@ -25,7 +25,7 @@ $sudo apt install ros-noetic-turtlebot3
 ## Setup
 ```bash
 $cd ~/catkin_ws/src
-$git clone https://github.com/hansenmaster/turtlebot_move_base_navigation_patrol_random
+$git clone https://github.com/hansenmaster/send_move_base_goals.git
 $cd ..
 $catkin_make
 $source devel/setup.bash
