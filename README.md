@@ -63,10 +63,10 @@ The goals generation is repeated forever for each time action is finished means 
 $export TURTLEBOT3_MODEL=burger
 $roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
-### Run Navigation
+### Run Navigation (change dir to map.yaml location)
 ```bash
 $export TURTLEBOT3_MODEL=burger
-$roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml (change dir to map.yaml location)
+$roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml 
 ```
 
 ### Run pose initialization:
